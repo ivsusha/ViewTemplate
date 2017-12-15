@@ -1,0 +1,21 @@
+  <div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table table-striped" >   
+            <thead>
+      <tr>         
+        <th>Name</th>
+        <th>PNR</th> 
+         <th>KST</th>      
+      </tr>
+    </thead>
+     <tbody > 
+    
+<tr  app-view-entry *ngFor="let entry of viewEntryArray"  [vEntry]="entry"> 
+</tr>               
+   </tbody>
+ </table>
+       
+    </div>
+</div>
+</div>

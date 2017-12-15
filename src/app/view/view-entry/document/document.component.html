@@ -1,0 +1,28 @@
+<div class="container-fluid">
+<div class="row">
+ <div class="col-xs-12">
+   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+     <div class="form-group">
+       <label for="name">Name</label>
+       <input type="text" id="name" class="form-control" [(ngModel)]="viewEntry.name" name="name" #name>   
+     </div>
+      <div class="form-group">
+       <label for="pnr">PNR</label>
+       <input type="text" id="pnr" class="form-control" [(ngModel)]="viewEntry.pnr" name="pnr" #pnr>   
+     </div>
+      <div class="form-group">
+       <label for="kst">KST</label>
+       <input type="text" id="kst" class="form-control"[(ngModel)]="viewEntry.kst" name="kst" #kst>   
+     </div>
+      <div>
+       <button class="btn btn-primary" type="button" (click)="loadView()">Back</button>  
+      <button class= "btn btn-primary" type="submit">Submit</button>
+      
+      </div>
+   </form>
+   
+ </div>
+</div>
+
+
+</div>
